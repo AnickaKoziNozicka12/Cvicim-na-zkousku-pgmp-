@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafy</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 id="nadpis">Počet přijatých studentů FPE od začátku roku</h1><br>
+
+    <button id="zadani" onclick="Zadat_rok()">Zadat</button>
+    <input id="rok" placeholder="Zadejte počáteční rok"><br>
+
+    <button id="odeslat_button" onclick="Pridat()" disabled>Odeslat</button>
+    <input id="pocet" placeholder="Zadejte číslo" disabled><br>
+
+    <button onclick="Smazat_konkretni()">Smazat položku</button>
+    <input placeholder="Číslo smazané položky"><br>
+
+    <button onclick="Sloupcovy()">Sloupcový</button>
+    <button onclick="Spojnicovy()">Spojnicový</button>
+    <button onclick="Prolnuty()">Prolnutý</button><br><br>
+
+    <canvas id="platno" class="graf"></canvas><br>
+
+    <button onclick="Smazat_all()">Vymazat data</button>
+    <button>Souhr let</button><br>
+
+    <p id="hodnoty">Zdrojová čísla:</p>
+    <p id="maximum">Maximum:</p>
+    <p id="minimum">Minimum:</p>
+    <p id="prumer">Průměrná hodnota je:</p>
+    <p id="zkouska"></p>
+
+</body>
+</html>
